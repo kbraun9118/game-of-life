@@ -11,12 +11,10 @@
       .fill(null)
       .map(() => Array(maxX).fill(false));
 
-  let maxX = 100;
-  let maxY = 100;
+  const maxX = 100;
+  const maxY = 100;
 
   let layout = createlayout();
-
-  $: console.log(layout[0][0]);
 
   function handleTick() {
     tick(layout, maxX, maxY);
